@@ -48,4 +48,9 @@
   mergeoptions = --no-edit
 [user]
 	email = marion.henrio@hotmail.fr
-	name = marion henrio
+	name = Marion Henrio
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
